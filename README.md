@@ -1,3 +1,14 @@
+# Projeto baseado na video aula da Rocketseat disponível no link (https://youtu.be/69e1MoUWE1g)
+
+O estado gerenciado dentro do componente é obrigatoriamente acessivel e modificavél apenas dentro do próprio componente
+
+No Redux existe apenas um único estado global da aplicação, onde as váriaveis de componentes são armazenados neste único estado. Com isso, fica fácil acessar em qualquer lugar da aplicação as variaveis do projeto. O componentes então passam a ouvir as alterações em suas variáveis (me lembra muito o Desing Pattern Observer)
+
+Tudo começa na View através da ação do usuário onde é disparado um Action, objeto que indica ao Redux qual ação deve ser feita no estado ( o que lembra o Desing Pattern MVC Action Based). A Action será ouvido pelo Redux e entregue ao Reducer (equivalente ao Controller do padrão MVC). O Reducer é o único local que pode alterar o estado da aplicação. Vários reducers podem ouvir uma mesma action.
+
+Sempre que o reduce altera o estado da aplicação, ele gera um novo estado da aplicação
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
